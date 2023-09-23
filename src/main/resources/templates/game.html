@@ -1,0 +1,22 @@
+<div class="container table">
+    <div class="row">
+        <p th:text="|ポイント：${player.point}|"></p>
+    </div>
+    <div class="row">
+        <form th:action="@{/change}" method="post" id="gamingForm">
+            <div class="form-group cell-left" id="handArea" th:include="hand"></div>
+            <div class="form-group cell-right" id="handsArea" th:include="hands"></div>
+        </form>
+    </div>
+    <div class="form-group row" id="executeArea">
+        <th:block th:if="${!isExchange}")>
+            <p>これ以上手札交換はできません</p>
+        </th:block>
+        <th:block th:if="${!isContinueGame}")>
+            <p>ゲーム終了です。</p>
+        </th:block>
+        <form th:action="@{/showDown}" method="post" id="showDownForm"></form>
+        <input type="button" class="btn btn-default" id="btnChange" value="手札交換" th:disabled="${!isExchange || !isContinueGame}"/>
+        <input type="button" class="btn btn-default" id="btnShowDown" value="ショーダウン" th:disabled="${!isContinueGame}"/>
+    </div>
+</div>

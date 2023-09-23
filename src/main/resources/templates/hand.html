@@ -1,0 +1,7 @@
+<div class="handlist">
+    <th:block th:each="hand, stat : ${handList}">
+        <input type="radio" th:name="hand" th:id="|hand[${stat.index}]|" th:value="${hand.yaalaHand}" th:disabled="${!hand.isEstablished}">
+        <label th:for="|hand[${stat.index}]|" th:text="${hand.yaalaHand.name}"></label>
+        <br>
+    </th:block>
+</div>
