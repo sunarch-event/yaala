@@ -34,11 +34,11 @@ public class YaalaService {
             case NOHANDS:
                 result = true;
                 break;
-            case AIBOU:
-                result = JudgementHandUtil.judgementTwoPair(cards);
-                break;
             case TYOUJOU:
                 result = JudgementHandUtil.judgementThreeCard(cards);
+                break;
+            case NIPPAI:
+                result = JudgementHandUtil.judgementTwoPair(cards);
                 break;
             default:
                 break;

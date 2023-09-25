@@ -19,8 +19,12 @@ public class Game {
         exchangeCount++;
     }
     
+    public boolean isLastGame() {
+        return gameCount == ENABLE_GAME_COUNT;
+    }
+    
     public boolean isContinueGame() {
-        return gameCount < ENABLE_GAME_COUNT;
+        return gameCount <= ENABLE_GAME_COUNT;
     }
     
     public boolean isExchange() {

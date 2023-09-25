@@ -1,14 +1,21 @@
 <div class="container table">
     <div class="row">
+        <th:block th:if="${game.gameCount gt game.ENABLE_GAME_COUNT}">
+            <p th:text="|ゲーム数：${game.ENABLE_GAME_COUNT}/${game.ENABLE_GAME_COUNT}|"></p>
+        </th:block>
+        <th:block th:if="${game.gameCount le game.ENABLE_GAME_COUNT}">
+            <p th:text="|ゲーム数：${game.gameCount}/${game.ENABLE_GAME_COUNT}|"></p>
+        </th:block>
+        <p th:text="|手札交換可能回数残り：${game.ENABEL_EXCHANGE_COUNT - game.exchangeCount}|"></p>
         <p th:text="|ポイント：${player.point}|"></p>
     </div>
     <div class="row">
         <form th:action="@{/change}" method="post" id="gamingForm">
-            <div class="form-group cell-left" id="handArea" th:include="hand"></div>
+            <div class="form-group cell-left container2" id="handArea" th:include="hand"></div>
             <div class="form-group cell-right" id="handsArea" th:include="hands"></div>
         </form>
     </div>
-    <div class="form-group row" id="executeArea">
+    <div class="form-group row container3" id="executeArea">
         <th:block th:if="${!isExchange}")>
             <p>これ以上手札交換はできません</p>
         </th:block>

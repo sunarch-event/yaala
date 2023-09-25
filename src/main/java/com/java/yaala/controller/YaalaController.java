@@ -47,12 +47,14 @@ public class YaalaController {
         deck.shuffle();
         hands.setCards(deck.deal());
         player.setPoint(0);
+        player.resetUsedYaalaHand();
         List<Hand> judgedHandList = service.getJudgedHandList(hands.getCards());
         model.addAttribute("isExchange", game.isExchange());
         model.addAttribute("isContinueGame", game.isContinueGame());
         model.addAttribute("hands", hands);
         model.addAttribute("handList", judgedHandList);
         model.addAttribute("player", player);
+        model.addAttribute("game", game);
         return "game";
     }
     
@@ -73,28 +75,33 @@ public class YaalaController {
         model.addAttribute("hands", hands);
         model.addAttribute("handList", judgedHandList);
         model.addAttribute("player", player);
+        model.addAttribute("game", game);
         return "game";
     }
     
     @PostMapping("/showDown")
     public String showDown(@RequestParam("hand")YaalaHand hand, Model model) {
         
-        model.addAttribute("isContinueGame", game.isContinueGame());
         if(game.isContinueGame()) {
             if(service.judgedmentHand(hand, hands.getCards())) {
                 player.addPoint(hand.getPoint());
+                player.addUsedYaalaHand(hand);
             }
-            deck.reload();
-            deck.shuffle();
-            hands.setCards(deck.deal());
-            game.addGameCount();
+            if(!game.isLastGame()) {
+                deck.reload();
+                deck.shuffle();
+                hands.setCards(deck.deal());
+            }
             game.resetExchange();
+            game.addGameCount();
         }
+        model.addAttribute("isContinueGame", game.isContinueGame());
         List<Hand> judgedHandList = service.getJudgedHandList(hands.getCards());
         model.addAttribute("isExchange", game.isExchange());
         model.addAttribute("hands", hands);
         model.addAttribute("handList", judgedHandList);
         model.addAttribute("player", player);
+        model.addAttribute("game", game);
         return "game";
     }
 }

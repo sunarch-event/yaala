@@ -1,3 +1,13 @@
+.container{
+    margin: 0 auto;
+    display: flex;
+}
+.container2{
+    vertical-align: top;
+}
+.container3{
+    text-align: center;
+}
 .table{
     display: table;
     width: 100%;
@@ -9,6 +19,7 @@
 .table .cell-right{
     display: table-cell;
     padding: 20px;
+    vertical-align: middle
 }
 .table .row{
     display: table-row;
@@ -18,244 +29,258 @@
     display: block;
 }
 
-input[type=checkbox]+label:before{
-    content: "";
-    display: inline-block;
-    background-size: contain;
-    width: 100px;
-    height: 139px;
-    border: 3px solid #FFF;
-    background-image:url(/yaala/img/1_1.PNG);
-}
 label.card_1_1{
     content: "";
     display: inline-block;
     background-image:url(/yaala/img/1_1.PNG);
     background-size:contain;
+    background-repeat: no-repeat;
     width: 100px;
     height: 139px;
-    border: 3px solid #FFF;
+    
 }
 label.card_1_2{
     content: "";
     display: inline-block;
     background-image:url(/yaala/img/1_2.PNG);
     background-size:contain;
+    background-repeat: no-repeat;
     width: 100px;
     height: 139px;
-    border: 3px solid #FFF;
+    
 }
 label.card_1_3{
     content: "";
     display: inline-block;
     background-image:url(/yaala/img/1_3.PNG);
     background-size:contain;
+    background-repeat: no-repeat;
     width: 100px;
     height: 139px;
-    border: 3px solid #FFF;
+    
 }
 label.card_1_4{
     content: "";
     display: inline-block;
     background-image:url(/yaala/img/1_4.PNG);
     background-size:contain;
+    background-repeat: no-repeat;
     width: 100px;
     height: 139px;
-    border: 3px solid #FFF;
+    
 }
 label.card_1_5{
     content: "";
     display: inline-block;
     background-image:url(/yaala/img/1_5.PNG);
     background-size:contain;
+    background-repeat: no-repeat;
     width: 100px;
     height: 139px;
-    border: 3px solid #FFF;
+    
 }
 label.card_1_6{
     content: "";
     display: inline-block;
     background-image:url(/yaala/img/1_6.PNG);
     background-size:contain;
+    background-repeat: no-repeat;
     width: 100px;
     height: 139px;
-    border: 3px solid #FFF;
+    
 }
 label.card_2_1{
     content: "";
     display: inline-block;
     background-image:url(/yaala/img/2_1.PNG);
     background-size:contain;
+    background-repeat: no-repeat;
     width: 100px;
     height: 139px;
-    border: 3px solid #FFF;
+    
 }
 label.card_2_2{
     content: "";
     display: inline-block;
     background-image:url(/yaala/img/2_2.PNG);
     background-size:contain;
+    background-repeat: no-repeat;
     width: 100px;
     height: 139px;
-    border: 3px solid #FFF;
+    
 }
 label.card_2_3{
     content: "";
     display: inline-block;
     background-image:url(/yaala/img/2_3.PNG);
     background-size:contain;
+    background-repeat: no-repeat;
     width: 100px;
     height: 139px;
-    border: 3px solid #FFF;
+    
 }
 label.card_2_4{
     content: "";
     display: inline-block;
     background-image:url(/yaala/img/2_4.PNG);
     background-size:contain;
+    background-repeat: no-repeat;
     width: 100px;
     height: 139px;
-    border: 3px solid #FFF;
+    
 }
 label.card_2_5{
     content: "";
     display: inline-block;
     background-image:url(/yaala/img/2_5.PNG);
     background-size:contain;
+    background-repeat: no-repeat;
     width: 100px;
     height: 139px;
-    border: 3px solid #FFF;
+    
 }
 label.card_2_6{
     content: "";
     display: inline-block;
     background-image:url(/yaala/img/2_6.PNG);
     background-size:contain;
+    background-repeat: no-repeat;
     width: 100px;
     height: 139px;
-    border: 3px solid #FFF;
+    
 }
 label.card_3_1{
     content: "";
     display: inline-block;
     background-image:url(/yaala/img/3_1.PNG);
     background-size:contain;
+    background-repeat: no-repeat;
     width: 100px;
     height: 139px;
-    border: 3px solid #FFF;
+    
 }
 label.card_3_2{
     content: "";
     display: inline-block;
     background-image:url(/yaala/img/3_2.PNG);
     background-size:contain;
+    background-repeat: no-repeat;
     width: 100px;
     height: 139px;
-    border: 3px solid #FFF;
+    
 }
 label.card_3_3{
     content: "";
     display: inline-block;
     background-image:url(/yaala/img/3_3.PNG);
     background-size:contain;
+    background-repeat: no-repeat;
     width: 100px;
     height: 139px;
-    border: 3px solid #FFF;
+    
 }
 label.card_3_4{
     content: "";
     display: inline-block;
     background-image:url(/yaala/img/3_4.PNG);
     background-size:contain;
+    background-repeat: no-repeat;
     width: 100px;
     height: 139px;
-    border: 3px solid #FFF;
+    
 }
 label.card_3_5{
     content: "";
     display: inline-block;
     background-image:url(/yaala/img/3_5.PNG);
     background-size:contain;
+    background-repeat: no-repeat;
     width: 100px;
     height: 139px;
-    border: 3px solid #FFF;
+    
 }
 label.card_3_6{
     content: "";
     display: inline-block;
     background-image:url(/yaala/img/3_6.PNG);
     background-size:contain;
+    background-repeat: no-repeat;
     width: 100px;
     height: 139px;
-    border: 3px solid #FFF;
+    
 }
 label.card_4_1{
     content: "";
     display: inline-block;
     background-image:url(/yaala/img/4_1.PNG);
     background-size:contain;
+    background-repeat: no-repeat;
     width: 100px;
     height: 139px;
-    border: 3px solid #FFF;
-}
-label.card_4_1{
-    content: "";
-    display: inline-block;
-    background-image:url(/yaala/img/4_1.PNG);
-    background-size:contain;
-    width: 100px;
-    height: 139px;
-    border: 3px solid #FFF;
+    
 }
 label.card_4_2{
     content: "";
     display: inline-block;
     background-image:url(/yaala/img/4_2.PNG);
     background-size:contain;
+    background-repeat: no-repeat;
     width: 100px;
     height: 139px;
-    border: 3px solid #FFF;
+    
 }
 label.card_4_3{
     content: "";
     display: inline-block;
     background-image:url(/yaala/img/4_3.PNG);
     background-size:contain;
+    background-repeat: no-repeat;
     width: 100px;
     height: 139px;
-    border: 3px solid #FFF;
+    
 }
 label.card_4_4{
     content: "";
     display: inline-block;
     background-image:url(/yaala/img/4_4.PNG);
     background-size:contain;
+    background-repeat: no-repeat;
     width: 100px;
     height: 139px;
-    border: 3px solid #FFF;
+    
 }
 label.card_4_5{
     content: "";
     display: inline-block;
     background-image:url(/yaala/img/4_5.PNG);
     background-size:contain;
+    background-repeat: no-repeat;
     width: 100px;
     height: 139px;
-    border: 3px solid #FFF;
+    
 }
 label.card_4_6{
     content: "";
     display: inline-block;
     background-image:url(/yaala/img/4_6.PNG);
     background-size:contain;
+    background-repeat: no-repeat;
     width: 100px;
     height: 139px;
-    border: 3px solid #FFF;
+    
 }
 input[type=checkbox]{
-        display: none;
+    display: none;
 }
-input[type=checkbox]:checked+label::before{
-        border: 3px solid #F00;
-        box-sizing: border-box;
+.hands input[type="checkbox"]:checked + label{
+    border: 3px solid #F00;
+    box-sizing: border-box;
+}
+.hands {
+    display: flex;
+}
+.hands label{
+    margin-right: 3px;
+    border: 3px solid #FFF;
+    box-sizing: border-box;
 }

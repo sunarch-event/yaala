@@ -1,7 +1,6 @@
-<th:block th:each="card, stat : ${hands.cards}">
-  <label th:class="|card_${card.mark}_${card.number}|" th:for="|hands_${stat.index}|"></label>
-</th:block>
-<br>
-<th:block th:each="card, stat : ${hands.cards}">
-  <input type="checkbox" th:name="hands" th:id="|hands_${stat.index}|" th:value="${stat.index}">
-</th:block>
+<div class="hands">
+  <th:block th:each="card, stat : ${hands.cards}">
+      <input type="checkbox" th:name="hands" th:id="|hands_${stat.index}|" th:value="${stat.index}">
+      <label th:class="|card_${card.mark}_${card.number}|" th:for="|hands_${stat.index}|"></label>
+  </th:block>
+  </div>
