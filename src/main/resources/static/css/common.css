@@ -29,6 +29,7 @@
     display: block;
 }
 .handlist .used{
+    color: gray;
     text-decoration: line-through;
 }
 
