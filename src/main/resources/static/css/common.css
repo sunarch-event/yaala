@@ -28,6 +28,9 @@
     margin-top:5px;
     display: block;
 }
+.handlist .used{
+    text-decoration: line-through;
+}
 
 label.card_1_1{
     content: "";
@@ -269,18 +272,18 @@ label.card_4_6{
     height: 139px;
     
 }
-input[type=checkbox]{
-    display: none;
-}
-.hands input[type="checkbox"]:checked + label{
-    border: 3px solid #F00;
-    box-sizing: border-box;
-}
 .hands {
     display: flex;
+}
+.hands input[type=checkbox]{
+    display: none;
 }
 .hands label{
     margin-right: 3px;
     border: 3px solid #FFF;
+    box-sizing: border-box;
+}
+.hands input[type="checkbox"]:checked + label{
+    border: 3px solid #F00;
     box-sizing: border-box;
 }

@@ -29,6 +29,10 @@ $(function() {
     });
     // Ajax通信 手札交換ボタンクリック
     $('body').on('click', '#btnChange', function(event){
+        if($('.hands input[type="checkbox"]:checked').length == 0){
+            alert('交換するカードを選択してください。');
+            return;
+        }
         event.preventDefault();
         $form = $('#gamingForm');
         $.ajax({
@@ -55,6 +59,10 @@ $(function() {
     });
     // Ajax通信 ショーダウンボタンクリック
     $('body').on('click', '#btnShowDown', function(event){
+        if($('.handlist input[type="radio"]:checked').length == 0){
+            alert('役を選択してください。');
+            return;
+        }
         event.preventDefault();
         $gamingForm = $('#gamingForm');
         $showDownForm = $('#showDownForm');
