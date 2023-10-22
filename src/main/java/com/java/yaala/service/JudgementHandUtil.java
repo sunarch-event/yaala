@@ -46,4 +46,74 @@ public class JudgementHandUtil {
         }
         return result;
     }
+    
+    public static boolean judgementOnePair(Card[] cards) {
+        boolean result = false;
+        return result;
+    }
+    
+    public static boolean judgementFourCard(Card[] cards) {
+        boolean result = false;
+        return result;
+    }
+    
+    public static boolean judgementFullHouse(Card[] cards) {
+        boolean result = false;
+        return result;
+    }
+    
+    public static boolean judgementStraight(Card[] cards) {
+        boolean result = false;
+        return result;
+    }
+    
+    public static boolean judgementFlash(Card[] cards) {
+        boolean result = false;
+        return result;
+    }
+    
+    public static boolean judgementStraightFlash(Card[] cards) {
+        boolean result = false;
+        return result;
+    }
+    
+    public static boolean judgementSunshine(Card[] cards) {
+        boolean result = false;
+        return result;
+    }
+    
+    public static boolean judgementTwinSun(Card[] cards) {
+        boolean result = false;
+        return result;
+    }
+    
+    public static boolean judgementStarFlash(Card[] cards) {
+        boolean result = false;
+        return result;
+    }
+    
+    public static boolean judgementDiaHouse(Card[] cards) {
+        boolean result = false;
+        return result;
+    }
+    
+    public static boolean judgementSpadeLeader(Card[] cards) {
+        boolean result = false;
+        return result;
+    }
+    
+    public static boolean judgementSpadeDiaMix(Card[] cards) {
+        boolean result = false;
+        return result;
+    }
+    
+    public static boolean judgementMarkWonder(Card[] cards) {
+        boolean result = false;
+        return result;
+    }
+    
+    public static boolean judgementSunArch(Card[] cards) {
+        boolean result = false;
+        return result;
+    }
 }
