@@ -74,7 +74,7 @@ public class YaalaService {
                 result = JudgementHandUtil.judgementSpadeLeader(cards);
                 break;
             case SPADEDIAMIX:
-                result = JudgementHandUtil.judgementSpadeLeader(cards);
+                result = JudgementHandUtil.judgementSpadeDiaMix(cards);
                 break;
             case MARKWONDER:
                 result = JudgementHandUtil.judgementMarkWonder(cards);
